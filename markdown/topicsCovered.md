@@ -1,12 +1,33 @@
 Topics Covered
 ====================
 
-- OS Overview and History
+- OS Overview and History 
 - File System  
+	- Directories in root  
+	- SUID/SGID permissions  
+	- Important Files 
+		- */etc/passwd* 
+		- */etc/shadow*
+		- */etc/services*
+		- */etc/resolv.conf*
+		- */etc/hosts* 
+		- */dev/null* 
+		- *.rhost* 
 - Package Management  
-- Networking  
+- Networking
+	- Network stack
+	- Networking options 
 - User Management and Rights  
-- Boot process  
+	- UIDs
+- Boot process 
+	- Run levels 
+	- */etc/inittab* 
+	- */etc/rc#.d* 
+	- */etc/init.d*  
 - Proc  
+	- Processes
 - Kernel
+	- Logs 
 - Working with Hardware  
+- Commands presented related to each topic
+- Vi / VIM

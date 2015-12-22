@@ -1,7 +1,10 @@
+<link rel="stylesheet" type="text/css" href="MD_styling.css" />
+
 Topics Covered
 ====================
 
 - OS Overview and History 
+- Fundamental Shell Commands
 - File System  
 	- Directories in root  
 	- SUID/SGID permissions  
@@ -13,6 +16,9 @@ Topics Covered
 		- */etc/hosts* 
 		- */dev/null* 
 		- *.rhost* 
+		- */var/log/btmp*
+		- */var/log/utmp*
+		- */var/log/wtmp*
 - Package Management  
 - Networking
 	- Network stack

@@ -8,6 +8,14 @@ Topics Covered
 - File System  
 	- Directories in root  
 	- SUID/SGID permissions  
+	- File Types
+		- Regular
+		- Symbolic
+		- Directory
+		- Socket
+		- Block Device
+		- Character Device
+	- Hidden files
 	- Important Files 
 		- */etc/passwd* 
 		- */etc/shadow*

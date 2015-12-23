@@ -35,6 +35,7 @@ if __name__ == "__main__":
 	parser.add_argument("-w", help="the max width of the ToC", default=90, type=int)
 	parser.add_argument("-p", help="force printing the ToC to stdout", default=False, action="store_true")
 	parser.add_argument("-t", help="the width of a tab", type=int, default=4)
+	parser.add_argument("--no-continuation", help="creates only linked headings, without line numbers or continuation characters", default=False, action="store_true")
 	parser.add_argument("fileName", help="the name of the Markdown file for which to create a ToC")
 	args = dict()
 	if (len(sys.argv) < 2): # argv[0] is program name, and does not count
@@ -45,6 +46,7 @@ if __name__ == "__main__":
 		LEN_LINE = args.w
 		PRINT_CONT_CHAR = args.p
 		TAB_WIDTH = args.t
+		PRINT_CONT_CHAR = not args.no_continuation
 	tocLine = ""
 	lastIndex = -1
 	i = 1
@@ -63,7 +65,7 @@ if __name__ == "__main__":
 					break
 			tocLine = line[lastIndex+1:].strip()
 			tocLine = "\t"*(lastIndex-1) + "[" + tocLine + "](#" + tocLine.lower().replace(" ", "-") + ")"
-			tocBuffer.append(appendLocation(tocLine, i, lastIndex-1) + "  \n")
+			tocBuffer.append(appendLocation(tocLine, i, lastIndex-1) + "  \n" if PRINT_CONT_CHAR else tocLine + "  \n")
 			tocCounter += 1
 			lastIndex = -1
 	tocBuffer = ''.join(tocBuffer)

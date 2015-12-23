@@ -9,9 +9,10 @@ If an item is not a file, then it is a process. Some of the "files" have special
 
 For a refresher, run *man hier*.
 
-# 
-
 # Directories
+
+**/**
+:	the *root* folder. This is the top of all directories on a linux system. Everything available in the system falls under *root*.
 
 **/bin**
 :	consists of programs required in single-user mode. This directory makes the commands available to all users. 
@@ -22,9 +23,9 @@ For a refresher, run *man hier*.
 **/dev** 
 :	consists of devices available to the system. */dev/sda* is often the drive on which the OS is mounted. *diskutil* and *fdisk* can be used to find disk information. 
 
-> diskutil list 	: displays disk information about mounted disks  
-> fdisk -l			: displays information about mounted disks  
-> df				: displays information about active, non-swap partitions
+> *diskutil list* 	: displays disk information about mounted disks  
+> *fdisk -l*		: displays information about mounted disks  
+> *df*				: displays information about active, non-swap partitions
 
 **/etc**
 :	consists of configuration files. Programs will store system-wide configuration information here. Non-traditionally, configuration files may also be found in */usr/etc*. The recommended behavior places configuration files in */etc* or a sub-folder therein, and then links if necessary to */usr/etc*.
@@ -44,7 +45,7 @@ For a refresher, run *man hier*.
 **/proc**
 :	is not a directory of the common file conception. */proc* allows direct access to the kernel during run time. Kernel properties can be modified on the fly; processes can be given runtime input. "Files" in this directory act as pointers to the related information. 
 
-> man proc		:	displays detailed information about each aspect in the */proc* directory 
+> *man proc*	:	displays detailed information about each aspect in the */proc* directory 
 
 **/root**
 :	optional directory for the root user. *root* may not appear in */home* because */home* is not always mounted in all situations (such as in a single-user mode).

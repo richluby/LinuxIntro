@@ -5,6 +5,10 @@ UNIX Context and Overview
 
 The Linux architecture is originally based on the UNIX system produced by AT&T. Due to the licensing of the original codebase, Linus Torvalds began creating his own OS to run on personal hardware. Gradually, the system attracted fellow developers and gained traction in the CS community. 
 
+# POSIX
+
+Portable Operating System Interface, or *POSIX*, defines a set of standards designed to improve the compatibility of UNIX-based operating systems. It describes the Application Programming Interface (API), shell environments, and other necessary components of a system. IEEE 1003 and ISO/IEC 9945 are the formal designations for the set of standards. 
+
 # Structure of the Linux OS
 
 There exist 3 major portions of a Linux Operating System.

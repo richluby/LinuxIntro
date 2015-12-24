@@ -32,17 +32,23 @@ Topics Covered
 	- Network stack
 	- Networking options 
 	- Analyzing the network
+	- Firewalls
 - User Management and Rights  
 	- UIDs
-- Boot process 
-	- Run levels 
-	- */etc/inittab* 
-	- */etc/rc#.d* 
-	- */etc/init.d*  
-- Proc  
+	- SUIDs/GUIDs/SGIDs
+	- Permissions
+	- Groups
+	- *root*
+	- Trusts
+- Process Management 
+	- UID 0
 	- Processes
-- Kernel
-	- Logs 
+	- Proc
+	- Boot process 
+		- Run levels 
+		- */etc/inittab* 
+		- */etc/rc#.d* 
+		- */etc/init.d*  
 - Working with Hardware  
 - Commands presented related to each topic
 - Vi / VIM

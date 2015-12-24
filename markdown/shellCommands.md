@@ -122,7 +122,17 @@ Additional permission information resides in the User section of the course.
 
 # Finding a File
 
-Linux uses `find` to find files in non-indexed locations. 
+Linux uses `find <path> <expression>` to find files in non-indexed locations. Tests are treated in linear fashing from left to right.
+
+> `find ./ -name "*.py"`:	finds the files with a *.py* extension in the current directory and all subdirectories  
+> `find / -perm 755`	:	finds all files with permissions set to 755, or RWX R-W R-W.  
+> `find ./ -perm /u=s`	:	finds all files in the current directory and subdirectories with the SUID bit set.
+
+Another option for finding files is `locate <pattern>[ pattern..]`. This command uses a database (usually at */var/lib/mlocate/mlocate.db*) in order to increase the speed at which files are found. The database is scheduled to update daily by `cron` in most cases. Use `updatedb` to update the list of files in the database.
+
+> `locate -e <pattern>`	:	check to make sure the file still exists before printing it.  
+> `locate -i <pattern>`	:	perform a case insensitive search.  
+> `locate -d [path] <pattern>`	:	perform a search using the databasae at *path*. The default database is used if *path* is blank. Multiple databases can be strung together in this way.  
 
 # Viewing File Contents
 
@@ -133,6 +143,14 @@ Three commands allowing viewing contents: `cat`, `more`, and `less`. `cat` simpl
 > `less <file>`	:	allows a user to scroll through a file bidirectionally. Also implements searching functions and several enhancements over `more`. It does not require reading an entire file before displaying output to the screen; this allows more efficient memory usage and a faster startup time.  
 > `head [-n #] <file>`	:	displays the first *n* lines of a file (default is 10). `-n` changes the number of lines displayed.  
 > `tail [-n #] <file>`	:	displays the last *n* lines of a file (default is 10). `-n` changes the number of lines displayed.  
+
+# Searching for a String
+
+To find a string in a an input sequence, use `grep <pattern> [file]`. `grep` provides a very in-depth searching mechanism for going through input. In the case of a binary file, `strings <file>` can be used to extract printable data from the file. Very often, data is piped to `grep` in order to search through it. 
+
+> `grep -i <pattern>`	:	perform a case-insensitive search for the *pattern*. By default. `grep` is case-sensitive.  
+> `grep -v <pattern>`	:	invert the match. Anything that does NOT match *pattern* will be marked.  
+> `grep -c <pattern>`	:	count the number of lines, but do not print any other information.  
 
 # Creating a File
 

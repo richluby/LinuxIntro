@@ -10,16 +10,16 @@ Many Linux distros use *bash*, or *Bourne Again SHell*. Other common shells incl
 Most Linux commands will follow the same basic syntax when presenting output for viewing. Consider the following usage line:
 
 ~~~ bash
-command -[o] [-r <param>] [-l <item1>[,item2,...]] thing && otherCommand
+user@host:dir$ command -[o] [-r <param>] [-l <item1>[,item2,...]] thing && command2
 ~~~
 
-Brackets "[ ]" represent optional arguments. Angled brackets "< >" represent required arguments. Some programs omit the "< >" as in the case of *thing* above.
+The first part of the line givens some information about the logged in user. It displays the user name and the computer hostname. In most systems, *dir* represents the full path to the current working directory. `$` is the prompt terminator for a normal user; `#` terminates a prompt for a user with sudo privileges. Brackets "[ ]" represent optional arguments. Angled brackets "< >" represent required arguments. Some programs omit the "< >" as in the case of *thing* above.
 
 > `-o`						:	optional argument. The program will choose a default value if it is not included.   
 > `-r <param>`				:	optional argument. When using this option, a *param* is expected. The program will throw an error if no *param* is given.  
 > `-l <item1>[,item2,...]]`	:	optional argument. This argument expects at least one *item* to be passed. However, additional items *may* be passed if separated by a ",".  
 > `thing`					:	required argument. The program will fail if this argument is omitted.  
-> `&&`						:	in this context, acts as a separator between two commands. `otherCommand` will only execute if `command` exited without an error.
+> `&&`						:	in this context, acts as a separator between two commands. `command2` will only execute if `command` exited without an error.
 
 In most instances, single-character arguements (such as `-o`, `-r`, and `-l` above) will have a single "-" in front of them to denote an option. Multi-character arguments (such as `--option` and `--long-option`) use "--" as the option marker. Options can be mixed in multiple orders, and most can be used together. A semicolon `;` can be used to separate multiple commands on the same line. 
 
@@ -163,4 +163,5 @@ There are many ways to create a new file. This course is not a comparison of the
 > `touch <file>`	:	creates a new, empty file.  
 > `echo <string> > <file>`:	creates a new file whose contents match *string*.  
 
-Source: gnu.org
+Source: gnu.org  
+		github.com/LinuxAtDuke/Intro-To-Linux

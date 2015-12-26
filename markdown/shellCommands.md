@@ -51,6 +51,19 @@ Every process starts with 3 *file descriptors*, indexed starting at 0. `stdin` i
 > `|`	:	pipe character. redirects `stdout` of the left side to `stdin` of the right side.
 
 # Covered Commands
+ 
+[Getting Help](#getting-help)  
+[Listing Files](#listing-files)  
+[Changing Directories](#changing-directories)  
+[Making Directories](#making-directories)  
+[Copying Files](#copying-files)  
+[Deleting Files](#deleting-files)  
+[Moving Files](#moving-files)  
+[Setting File Permissions](#setting-file-permissions)  
+[Finding a File](#finding-a-file)  
+[Viewing File Contents](#viewing-file-contents)  
+[Searching for a String](#searching-for-a-string)  
+[Creating a File](#creating-a-file)  
 
 # Getting Help
 

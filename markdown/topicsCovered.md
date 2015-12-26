@@ -6,9 +6,8 @@ Topics Covered
 - [OS Overview and History](OS_Overview.md)  
 - [Fundamental Shell Commands](shellCommands.md)
 - [File System](File\ System.md)  
-	- Directories in root  
-	- SUID/SGID permissions  
-	- File Types
+	- [Directories in root](File\ System.md#directories) 
+	- [File Types](File\ System.md#file-types)
 		- Regular
 		- Symbolic
 		- Directory
@@ -20,8 +19,6 @@ Topics Covered
 		- */etc/passwd* 
 		- */etc/shadow*
 		- */etc/services*
-		- */etc/resolv.conf*
-		- */etc/hosts* 
 		- */dev/null* 
 		- *.rhost* 
 		- */var/log/btmp*
@@ -29,10 +26,11 @@ Topics Covered
 		- */var/log/wtmp*
 - Package Management  
 - [Networking](networking.md)
-	- Network stack
-	- Networking options 
-	- Analyzing the network
-	- Firewalls
+	- [Networking Files](networking.md#networking-files)
+		- [*/etc/resolv.conf*](networking.md#resolver)
+		- [*/etc/hosts*](networking.md#hosts)
+	- [Commands](networking.md#networking-commands)
+	- [Network Security](networking.md#network-security)
 - User Management and Rights  
 	- UIDs
 	- SUIDs/GUIDs/SGIDs

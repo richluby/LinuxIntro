@@ -1,3 +1,10 @@
++++
+date = "2016-01-06"
+draft = true
+weight = 00
+title = "README"
++++
+
 Linux Fundamentals
 =====================
 
@@ -10,3 +17,19 @@ The organization of the project is folder based. The course material, written in
 # Course Module Structure
 
 Each module consists of three parts. The first portion provides the lecture and basic knowledge behind the topic; when practical, it also provides a live demonstration. The second portion gives students a task to accomplish as the instructor provides real-time feedback to students with questions or problems. The final part of a module gives students a task that incorporates the main topic and encourages critical thinking skills, ideally without instructor assistance.
+
+# Table of Contents
+
+* Unix, POSIX, Linux and more
+* coreutils
+* Command Line Interface
+* Navigation
+* File creation & viewing
+* File permissions
+* Users and Groups
+* Networking Configuration
+* Packet Capture
+* Networking Tools
+* Remote Shells
+* SSH Tunneling
+* Bonus

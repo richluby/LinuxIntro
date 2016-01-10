@@ -1,10 +1,3 @@
-+++
-date = "2016-01-06"
-draft = true
-weight = 00
-title = "README"
-+++
-
 Linux Fundamentals
 =====================
 
@@ -33,3 +26,8 @@ Each module consists of three parts. The first portion provides the lecture and 
 * Remote Shells
 * SSH Tunneling
 * Bonus
+
+# Running
+
+`hugo server --theme=angels-ladder -w --baseUrl="http://192.168.210.220:80" --bind="192.168.210.220" --pluralizeListTitles=false --port=80`
+

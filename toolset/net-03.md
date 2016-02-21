@@ -1,6 +1,6 @@
 +++
 date = "2016-01-06"
-draft = false
+draft = true
 weight = 11
 title = "Lab 11 - Remote Shells"
 +++
